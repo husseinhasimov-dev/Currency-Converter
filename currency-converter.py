@@ -1,6 +1,6 @@
 import requests , json , time
 
-response=requests.get("exchange api.key")
+response=requests.get("api.key")
 data=response.json()
 
 
@@ -15,4 +15,4 @@ your_conversion=input("Enter currency that you want to convert (For ex.: GBP) : 
 
 exchange_rate=conversion(your_money[1],your_conversion)
 
-print((exchange_rate*int(your_money[0])*100//1)/100)
+print(f"{your_money[0]} {your_money[1]} equals {(exchange_rate*int(your_money[0])*100//1)/100} {your_conversion}.")
