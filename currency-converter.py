@@ -16,5 +16,3 @@ your_conversion=input("Enter currency that you want to convert (For ex.: GBP) : 
 exchange_rate=conversion(your_money[1],your_conversion)
 
 print(f"{your_money[0]} {your_money[1]} equals {(exchange_rate*int(your_money[0])*100//1)/100} {your_conversion}.")
-
-print("Hello from Ubuntu")
